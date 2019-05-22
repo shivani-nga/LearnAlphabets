@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Learn_Alphabets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gqf-L4-38n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-jp-KnY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTo-29-GRM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.51875535100000003" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5l8-sc-5i2"/>
+                                </constraints>
+                                <string key="text">Basic Gesture Recognition 101 
+1
+2
+3
+
+5
+6
+7
+8</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="⏳" textAlignment="center" minimumFontSize="100" translatesAutoresizingMaskIntoConstraints="NO" id="pvy-DN-z9f">
+                                <rect key="frame" x="131.5" y="416" width="112" height="135"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vWg-sB-egn">
+                                <rect key="frame" x="20" y="416" width="335" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="gHT-Vi-El5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8S3-IH-5PA" firstAttribute="trailing" secondItem="vWg-sB-egn" secondAttribute="trailing" constant="20" id="0zL-0o-xqx"/>
+                            <constraint firstItem="pvy-DN-z9f" firstAttribute="centerX" secondItem="Gqf-L4-38n" secondAttribute="centerX" id="5Od-h9-GuU"/>
+                            <constraint firstItem="vWg-sB-egn" firstAttribute="top" secondItem="pvy-DN-z9f" secondAttribute="top" id="7CS-Fw-6NM"/>
+                            <constraint firstItem="NTo-29-GRM" firstAttribute="trailing" secondItem="8S3-IH-5PA" secondAttribute="trailing" id="7wW-36-aun"/>
+                            <constraint firstItem="NTo-29-GRM" firstAttribute="leading" secondItem="8S3-IH-5PA" secondAttribute="leading" id="89i-TV-kQ0"/>
+                            <constraint firstItem="pvy-DN-z9f" firstAttribute="centerY" secondItem="Gqf-L4-38n" secondAttribute="centerY" constant="150" id="EsY-D0-3Hg"/>
+                            <constraint firstItem="vWg-sB-egn" firstAttribute="leading" secondItem="8S3-IH-5PA" secondAttribute="leading" constant="20" id="LzJ-mB-f5W"/>
+                            <constraint firstItem="nrn-jp-KnY" firstAttribute="top" secondItem="Gqf-L4-38n" secondAttribute="top" id="Mhf-lH-Veg"/>
+                            <constraint firstItem="NTo-29-GRM" firstAttribute="top" secondItem="Gqf-L4-38n" secondAttribute="top" id="Vl0-jN-TkZ"/>
+                            <constraint firstItem="vWg-sB-egn" firstAttribute="centerX" secondItem="pvy-DN-z9f" secondAttribute="centerX" id="c4z-1c-Aem"/>
+                            <constraint firstItem="nrn-jp-KnY" firstAttribute="trailing" secondItem="8S3-IH-5PA" secondAttribute="trailing" id="cgr-No-hs8"/>
+                            <constraint firstItem="nrn-jp-KnY" firstAttribute="bottom" secondItem="8S3-IH-5PA" secondAttribute="bottom" id="ctK-pi-aZH"/>
+                            <constraint firstItem="nrn-jp-KnY" firstAttribute="leading" secondItem="8S3-IH-5PA" secondAttribute="leading" id="plw-2B-lBO"/>
+                            <constraint firstItem="vWg-sB-egn" firstAttribute="centerY" secondItem="pvy-DN-z9f" secondAttribute="centerY" id="sIf-dX-jUV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8S3-IH-5PA"/>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="NTo-29-GRM" id="hte-b1-Lo6"/>
+                        <outlet property="myObject" destination="vWg-sB-egn" id="Qv7-5g-V1b"/>
+                        <outlet property="sceneView" destination="nrn-jp-KnY" id="dAp-ft-qBx"/>
+                        <outlet property="textOverlay" destination="pvy-DN-z9f" id="ffU-Xo-AHl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
